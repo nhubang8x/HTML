@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/myapp.js"></script>
+</head>
+<body>
+<section class="page-wrapper">
+    <header class="truyen-header">
+        <nav class="navbar navbar-truyen">
+            <section class="container" style="display: block;">
+                <section class="navbar-header">
+                    <a href="/" class="navbar-logo hidden-sm hidden-xs"> <img
+                            class="img-fluid" src="img/logo.png" alt="">
+                    </a>
+                    <a href="#" class="navbar-search-btn js-open-search-box-mobile d-md-block d-lg-none">
+                        <i class="truyen-icon icon-search"></i>
+                    </a>
+                    <section class="navbar-category">
+                        <button class="navbar-category-btn js-open-sidebar">
+                                    <span class="lines"> <span class="line"></span> <span
+                                            class="line"></span> <span class="line"></span>
+                                    </span> <span class="hidden-xs hidden-sm">Danh Mục</span>
+                        </button>
+                        <ul class="navbar-category-list">
+                            <li class="col-4 float-left">
+                                <a href="" title="Truyện Hoàn Thành">Truyện Hoàn Thành</a>
+                            </li>
+                            <li class="col-4 float-left">
+                                <a href="" title="Truyện Mới" >Truyện Mới</a>
+                            </li>
+                            <li class="col-4 float-left">
+                                <a href="" title="Bảng Xếp Hạng" >Bảng Xếp Hạng</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="navbar-category">
+                        <button class="navbar-category-btn js-open-sidebar">
+                            <span class="lines">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </span>
+                            <span class="hidden-xs hidden-sm">Thể loại</span>
+                        </button>
+                        <ul class="navbar-category-list" >
+                            <li class="col-4 float-left">
+                                <a href="" title="'Truyện'">Truyện Đô Thị</a>
+                            </li>
+                            <li class="col-4 float-left">
+                                <a href="" title="'Truyện'">Truyện Đồng Nhân</a>
+                            </li>
+                            <li class="col-4 float-left">
+                                <a href="" title="'Truyện'">Truyện Tiên Hiệp</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </section>
+                <section class="custom navbar-custom">
+                    <ul class="nav navbar-nav navbar-right"
+                        style="flex-direction: row;">
+                        <li>
+                            <section class="search-block">
+                                <section class="actions">
+                                    <button type="submit" title="Tìm kiếm"
+                                            class="search-toggle-btn" id="js-search-toggle">
+                                        <i class="truyen-icon icon-search"></i>
+                                    </button>
+                                </section>
+                                <form id="js-search-panel" class="search-panel">
+                                    <input type="text" name="txtKeyword" id="txtKeyword" value=""
+                                           placeholder="Tên truyện" class="form-control"
+                                           autocomplete="off">
+                                    <button class="btn btn-search" type="submit">
+                                        <i class="truyen-icon icon-search-primary"></i>
+                                    </button>
+                                </form>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="user-block">
+                                <i class="truyen-icon icon-user"></i>
+                                <a href=""> Đăng nhập </a>
+                                <span class="diver">|</span>
+                                <a href=""> Đăng ký </a>
+                            </section>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="truyen-icon icon-user"></i>
+                                <span class="truyen-login-title">nhubang8x</span>
+                            </a>
+                            <ul class="dropdown-menu" style="position: absolute; float: none; top: 115%; left: -66%">
+                                <li><a href="">Hồ Sơ</a></li>
+                                <li><a href="">Nạp Coin</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a href="javascript:formLogout()">Thoát</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </header>
+    <aside class="truyen-sidebar">
+        <a href="#" class="sidebar-close js-close-sidebar"></a>
+        <section class="sidebar-container">
+            <section class="sidebar-header">
+                <section class="user-icon">
+                    <i class="truyen-icon icon-user"></i>
+                </section>
+                <section class="card-menu">
+                    <section class="list-group" style="margin-bottom: 20px;">
+                        <section class="list-group-item list-group-item-sidebar">
+                            <a class="truyen-sidebar-user-title" role="button"
+                               data-toggle="collapse" href="#truyen-user-login-custom"
+                               aria-expanded="false"
+                               aria-controls="truyen-user-login-custom">Đăng nhập /
+                                Đăng ký <span class="truyen-icon icon-white-next"></span>
+                            </a>
+                        </section>
+                        <section class="list-group collapse"
+                                 id="truyen-user-login-custom">
+                            <section
+                                    class="list-group-item list-group-item-sidebar list-group-item-diver"></section>
+                            <section class="list-group-item list-group-item-sidebar">
+                                <a href="" class="login-btn">Đăng nhập</a>
+                            </section>
+                            <section class="list-group-item list-group-item-sidebar">
+                                <a href="" class="login-btn">Đăng ký</a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="sidebar-header">
+                <section class="user-icon">
+                    <i class="truyen-icon icon-user"></i>
+                </section>
+                <form  method="post" id="frmLogout">
+                    <input type="hidden" name="${_csrf.parameterName}"
+                           value="${_csrf.token}" />
+                </form>
+                <script>
+                    function formLogout() {
+                        document.getElementById("frmLogout").submit();
+                    }
+                </script>
+                <a href="javascript:formLogout()" class="user-logout">Thoát</a>
+                <section class="card-menu">
+                    <section class="list-group" style="margin-bottom: 20px;">
+                        <section class="list-group-item list-group-item-sidebar">
+                            <a class="truyen-sidebar-user-title collapsed"
+                               role="button" data-toggle="collapse"
+                               href="#truyen-user-menu-collapse" aria-expanded="false"
+                               aria-controls="truyen-user-menu-collapse">nhubang6x <span
+                                    class="truyen-icon icon-white-next"></span>
+                            </a>
+                        </section>
+                        <section class="list-group collapse"
+                                 id="truyen-user-menu-collapse">
+                            <section
+                                    class="list-group-item list-group-item-sidebar list-group-item-diver"></section>
+                            <section class="list-group-item list-group-item-sidebar">
+                                <a  href="/tai-khoan/dang-truyen/">Đăng truyện<span
+                                        class="truyen-icon icon-white-next"></span>
+                                </a>
+                            </section>
+                            <section class="list-group-item list-group-item-sidebar">
+                                <a href="/account/list_story/">Quản lý truyện<span
+                                        class="truyen-icon icon-white-next"></span></a>
+                            </section>
+                            <section
+                                    class="list-group-item list-group-item-sidebar list-group-item-diver"></section>
+                            <section class="list-group-item list-group-item-sidebar">
+                                <a  href="/tai-khoan/tu-truyen/">Tủ truyện<span
+                                        class="truyen-icon icon-white-next"></span></a>
+                            </section>
+                            <section
+                                    class="list-group-item list-group-item-sidebar list-group-item-diver"></section>
+                            <section class="list-group-item list-group-item-sidebar">
+                                <a href="/tai-khoan/">Hồ sơ <span
+                                        class="truyen-icon icon-white-next"></span></a>
+                            </section>
+                            <section
+                                    class="list-group-item list-group-item-sidebar list-group-item-diver"></section>
+                            <section class="list-group-item list-group-item-sidebar">
+                                <a href="/tai-khoan/nap-the">Nạp Coin<span
+                                        class="truyen-icon icon-white-next"></span></a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="sidebar-menu">
+                <section class="list-group" style="margin-bottom: 20px;">
+                    <section class="list-group-item list-group-item-sidebar">
+                        <a href="/"> Trang chủ <span
+                                class="truyen-icon icon-next"></span>
+                        </a>
+                    </section>
+                </section>
+                <section class="list-group-item list-group-item-sidebar"
+                         style="margin-bottom: 20px;">
+                    <a href="danh-muc/truyen-moi" target="_blank"
+                       title="Truyện Mới"> Truyện Mới <span
+                            class="truyen-icon icon-next"></span>
+                    </a>
+                    <a href="danh-muc/hoan-thanh" target="_blank"
+                       title="Truyện Hoàn Thành"> Truyện Hoàn Thành <span
+                            class="truyen-icon icon-next"></span>
+                    </a> <a href="danh-muc/bang-xep-hang" target="_blank"
+                            title="forum"> Bảng xếp hạng <span
+                        class="truyen-icon icon-next"></span>
+                </a>
+                </section>
+            </section>
+            <section class="list-group" style="margin-bottom: 20px;">
+                <section class="list-group-item list-group-item-sidebar">
+                    <a title="Truyện">Truyen Do Thi<span class="truyen-icon icon-next"></span></a>
+                </section>
+            </section>
+        </section>
+    </aside>
+    <a href="#" class="truyen-sidebar-overlay js-close-sidebar"></a>
+    <section class="truyen-search-box">
+        <section class="container">
+            <form class="search-box-mobile">
+                <input type="text" id="txtKeyword1" name="txtKeyword1"
+                       class="form-control"
+                       placeholder="Tên truyện hoặc tác giả không dấu" value=""
+                       autocomplete="off">
+                <button type="submit" class="search-box-mobile-btn"
+                        id="js-search-box-mobile-btn">
+                    <i class="truyen-icon icon-search-primary"></i>
+                </button>
+            </form>
+        </section>
+    </section>
+    <a href="#" class="truyen-search-box-overlay js-close-search-box"></a>
+</section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
